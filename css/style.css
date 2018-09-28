@@ -1,0 +1,222 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	color: #868585;
+	background: #fdfcfb;
+	font-weight: normal;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+header {
+	margin: 50px 0 80px;
+}
+
+.menu {
+	position: relative;
+	background: #fefefe;
+	border: 0;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
+	/*padding: 15px 0;*/
+	/*height: 80px;*/
+}
+
+.navbar-brand {
+	padding-right: 80px;
+}
+
+.navbar-brand img {
+	/*position: absolute;*/
+}
+
+
+.navbar .navbar-nav > li > a {
+	color: #8d8c8c;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.navbar .navbar-nav > li.active > a {
+	border-bottom: 1px solid #d42819;
+	color: #8d8c8c;
+}
+
+.navbar .navbar-nav:not(.icons) > li > a:hover {
+	border-bottom: 1px solid #d42819;
+	color: #8d8c8c;
+}
+
+.icons {
+	padding: 15px 0;
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+  .navbar-brand {
+	padding-right: 10px;
+  }
+  
+/*/  эти правила должны работать на маленьких девайсах - здесь надо убрать складывание меню/*/
+
+  .navbar-brand img {
+  	max-height: 50px;
+  	top: -48px;
+  	/*width: 50%;*/
+  }
+
+  .navbar .navbar-nav > li.active > a {
+		border-bottom: 0;
+		color: #fff;
+		background-color: #d42819;
+  }
+ 
+  .navbar .navbar-nav:not(.icons) > li > a:hover {
+		border-bottom: 0;
+		color: #fff;
+		background-color: #d42819;
+  }
+
+/*///*/
+
+
+	.navbar-nav,
+	.mr-auto {
+		display: flex !important; /*хоть тресни не выходит*/
+	}
+
+	.icons > li {
+		
+	}
+
+}
+
+h1 {
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+/*span {
+  color: red;
+}*/
+
+/*.row {
+	margin-top: 50px;
+}*/
+
+.card {
+	border: 0;
+	margin-top: 50px;
+
+}
+
+/*?*/
+.card img {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
+}
+
+.nav-pager {
+  transform: translateX(41.5%);
+  margin-top: 40px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.pagination > li > a, .pagination > li >span {
+	color: #b5b3b3;
+}
+
+.page-item.active .page-link {
+	background: #fff;
+	border: 1px solid #ddd;
+	color: #d42819;
+}
+
+.page-link span {
+	color: #b5b3b3;
+}
+
+footer p {
+	text-align: right;
+}
+
+@media only screen and (max-width : 990px) {
+	h1 {
+		font-size: 1.4rem;
+	}
+
+	.navbar-brand img {
+		/*position: relative;
+		top: -48px;*/
+
+		width: 53px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+	h1 {
+		font-size: 1rem;
+	}
+
+	.menu {
+		padding: 0;
+	}
+
+  .navbar-brand img {
+  	max-height: 50px;
+  	top: -48px;
+  }
+
+  .navbar .navbar-nav > li.active > a {
+		border-bottom: 0;
+		color: #fff;
+		background-color: #d42819;
+  }
+ 
+  .navbar .navbar-nav:not(.icons) > li > a:hover {
+		border-bottom: 0;
+		color: #fff;
+		background-color: #d42819;
+  }
+
+
+	 .dropdown-menu-right .icons li {
+	 	cursor: pointer;
+	 	display: inline-block !important;
+	}
+
+}
+
+/*я добавила*/
+@media only screen and (max-width : 575px) {
+
+	.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+  	padding-right: 30px;
+  	padding-left: 30px;
+  }
+  
+	.card {
+		text-align: center;
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+@media only screen and (max-width : 500px) {
+
+	h1 {
+		font-size: 0.75rem;
+	}
