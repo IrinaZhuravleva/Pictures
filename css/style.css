@@ -31,25 +31,33 @@ header {
 	/*position: absolute;*/
 }
 
+.navbar-nav {
+	margin: 20px 20px;
+}
 
 .navbar .navbar-nav > li > a {
 	color: #8d8c8c;
 	font-size: 18px;
 	text-transform: uppercase;
+	padding-left: 15px;
 }
 
 .navbar .navbar-nav > li.active > a {
-	border-bottom: 1px solid #d42819;
+	border-bottom: 3px solid #dff0d8;
 	color: #8d8c8c;
 }
 
 .navbar .navbar-nav:not(.icons) > li > a:hover {
-	border-bottom: 1px solid #d42819;
+	border-bottom: 3px solid #dff0d8;
 	color: #8d8c8c;
 }
 
 .icons {
 	padding: 15px 0;
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+	outline: none;
 }
 
 
@@ -63,6 +71,7 @@ header {
   .navbar-brand {
 	padding-right: 10px;
   }
+
   
 /*/  эти правила должны работать на маленьких девайсах - здесь надо убрать складывание меню/*/
 
@@ -75,13 +84,13 @@ header {
   .navbar .navbar-nav > li.active > a {
 		border-bottom: 0;
 		color: #fff;
-		background-color: #d42819;
+		background-color: #dff0d8;
   }
  
   .navbar .navbar-nav:not(.icons) > li > a:hover {
 		border-bottom: 0;
 		color: #fff;
-		background-color: #d42819;
+		background-color: #dff0d8;
   }
 
 /*///*/
@@ -136,7 +145,7 @@ h1 {
 .page-item.active .page-link {
 	background: #fff;
 	border: 1px solid #ddd;
-	color: #d42819;
+	color: #dff0d8;
 }
 
 .page-link span {
@@ -179,13 +188,13 @@ footer p {
   .navbar .navbar-nav > li.active > a {
 		border-bottom: 0;
 		color: #fff;
-		background-color: #d42819;
+		background-color: #dff0d8;
   }
  
   .navbar .navbar-nav:not(.icons) > li > a:hover {
 		border-bottom: 0;
 		color: #fff;
-		background-color: #d42819;
+		background-color: #dff0d8;
   }
 
 
