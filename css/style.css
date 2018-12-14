@@ -19,8 +19,6 @@ header {
 	background: #fefefe;
 	border: 0;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
-	/*padding: 15px 0;*/
-	/*height: 80px;*/
 }
 
 .navbar-brand {
@@ -28,7 +26,6 @@ header {
 }
 
 .navbar-brand img {
-	/*position: absolute;*/
 }
 
 .navbar-nav {
@@ -43,12 +40,13 @@ header {
 }
 
 .navbar .navbar-nav > li.active > a {
-	border-bottom: 3px solid #dff0d8;
+	border-bottom: 3px solid #C59EAF;
 	color: #8d8c8c;
 }
 
 .navbar .navbar-nav:not(.icons) > li > a:hover {
-	border-bottom: 3px solid #dff0d8;
+	/*border-bottom: 3px solid #dff0d8;*/
+  border-bottom: 3px solid #C59EAF;
 	color: #8d8c8c;
 }
 
@@ -71,13 +69,9 @@ header {
 	padding-right: 10px;
   }
 
-  
-/*/  эти правила должны работать на маленьких девайсах - здесь надо убрать складывание меню/*/
-
   .navbar-brand img {
   	max-height: 50px;
   	top: -48px;
-  	/*width: 50%;*/
   }
 
   .navbar .navbar-nav > li.active > a {
@@ -92,18 +86,14 @@ header {
 		background-color: #dff0d8;
   }
 
-/*///*/
-
-
 	.navbar-nav,
 	.mr-auto {
-		display: flex !important; /*хоть тресни не выходит*/
+		display: flex !important; /
 	}
 
 	.icons > li {
 		
 	}
-
 }
 
 h1 {
@@ -111,21 +101,12 @@ h1 {
 	font-size: 1.8rem;
 }
 
-/*span {
-  color: red;
-}*/
-
-/*.row {
-	margin-top: 50px;
-}*/
-
 .card {
 	border: 0;
 	margin-top: 50px;
 
 }
 
-/*?*/
 .card img {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.19);
 }
@@ -151,19 +132,12 @@ h1 {
 	color: #b5b3b3;
 }
 
-footer p {
-	text-align: right;
-}
-
 @media only screen and (max-width : 990px) {
 	h1 {
 		font-size: 1.4rem;
 	}
 
 	.navbar-brand img {
-		/*position: relative;
-		top: -48px;*/
-
 		width: 53px;
 	}
 }
@@ -283,3 +257,224 @@ footer p {
 	padding-bottom: 30px;
 }
 /*block menu end*/
+
+/* ........................................
+
+    FOOTER
+
+........................................ */
+
+.footer {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  background-color: #C59EAF;
+  /*background-color: #dff0d8;*/
+  color: #ffffff;
+}
+
+@media (max-width: 1024px){
+  .footer {
+    text-align: center;
+  }
+}
+
+.footer_2 {
+  background-color:  #ffffff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.copyright {
+  padding: 10px;
+  padding-right: 100px;
+  background-color: #fff;
+}
+
+.footer .row {
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.footer p {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.footer a {
+  color: #FFF;
+}
+
+p.footer__name {
+  font-size: 28px;
+  margin-bottom: 10px;
+  line-height: normal;
+  font-family: 'Merriweather', serif;
+}
+
+p.footer__social {
+  color: #FFF;
+}
+
+.footer__social-icons {
+  color: #FFF;
+  font-size: 32px;
+  margin-top: -17px; 
+}
+
+.footer__social-icons a {
+  color: #FFF;
+  text-decoration: none;
+  margin-right: 30px;
+}
+
+.footer__social-icons a:last-child {
+  margin-right: 0px;
+}
+
+.footer__social-icons a:hover {
+  color: #8F6E5F;
+}
+
+.button {
+  font-weight: 700;
+  text-decoration: none;
+  color: #8F7D31;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  display: inline-block;
+  border-width: 2px;
+  border-color: #FFF;
+  border-style: solid;
+  border-radius: 50px;
+  padding: 8px 23px;
+  margin-bottom: 13px;
+  transition: 0.2s ease-out;
+}
+
+.button:hover {
+  color: #8F6E5F;
+  background-color: #C59EAF;
+}
+
+.button__modal {
+  border-color: #8F7D31;
+}
+
+
+
+/*portfolio-orgnica*/
+
+.modal {
+  color: #8F6E5F;
+}
+
+/*CONTACT FORM*/
+
+.contact_form {
+  color: #8F6E5F;
+  max-width: 600px;
+  height: auto;
+  margin: 50px auto 50px;
+}
+
+.contact_form h2 {
+  font-size: 28px;
+  margin: 0 0 0px;
+}
+
+.contact_form .subtitle {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.contact_form label {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.contact_form input[type="text"] {
+  color: #8F6E5F;
+  width: 100%;
+  margin-bottom: 25px;
+  padding: 4px;
+  font-size: 18px;
+}
+
+.contact_form textarea {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 25px;
+  padding: 4px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 18px;
+  color: #8F6E5F;
+  resize: none;
+}
+
+.contact_form input[type="text"] {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.contact_form input[type="submit"] {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.thankyou {
+  text-align: center;
+  font-size: 18px;
+}
+
+.thankyou h1 {
+  font-size: 28px;
+}
+
+.thankyou p {
+  font-size: 18px;
+}
+
+@media (max-width: 650px) {
+  .contact_form {
+    width: 288px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.animationTopBottom {
+  animation-name: animationTopBottom;
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  /*animation-fill-mode: both:*/
+  /*animation-direction: alternate-reverse;*/
+  animation-direction: alternate;
+}
+
+@keyframes animationTopBottom {
+  from{
+  transform: translateY(-90%);
+  }
+
+  to {
+  transform: translateY(0%);
+  }
+}
+
+.contact_button {
+  border-color: rgb(254, 241, 255) rgb(219, 196, 220) rgb(194, 165, 188);
+  background: linear-gradient(45deg, #FFF, #8F6E5F);
+  color: white;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 16px;
+}
+
+.contact_form textarea {
+  border-color: rgb(254, 241, 255) rgb(219, 196, 220) rgb(194, 165, 188);
+}

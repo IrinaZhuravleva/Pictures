@@ -1,0 +1,180 @@
+<!-- contact-form.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>My portfolio</title>
+    
+    <!--  Инструкция для IE  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--  Отображать страницу в масштабе 100%  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Нормализация стилей -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    
+    <!--  Подключение веб-шрифтов  -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|PT+Sans+Caption:400,700" rel="stylesheet"> 
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900|Ubuntu+Condensed|Yeseva+One" rel="stylesheet">
+
+    <!-- Подключение стилей  jquery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon/favicon4.ico">
+
+    <link rel="stylesheet" href="libs/animate.css">
+
+    <!-- Собственные стили пишутся всегда в конце-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Виджет вКонтанкте -->
+
+    <!-- <script type="text/javascript">
+  VK.init({apiId: 6657871, onlyWidgets: true});
+</script>
+<script type="text/javascript" src="https://vk.com/js/api/openapi.js?158"></script> -->
+    
+
+</head>
+<body>
+    
+    
+<!-- ...................................... 
+
+CONTACT FORM
+
+...................................... -->
+<div class="portfolio wow fadeInUp">
+  <div class="container">
+    <div class="title">
+        Contact form
+    </div>
+    <div class="row">
+      <form action="php/mail-en.php" class="contact_form" method="POST">
+
+        <!-- Hidden Required Fields -->
+        <input type="hidden" name="project_name" value="Сайт Портфолио">
+        <input type="hidden" name="admin_email" value="sparrow113@yandex.ru">
+        <input type="hidden" name="email_from" value="info@irinazhuravleva.000webhostapp.com">
+        <input type="hidden" name="form_subject" value="Сообщение с сайта">
+        <!-- END Hidden Required Fields -->
+        
+        <h2>Fill in this form</h2>
+        <div class="subtitle">and we will write you back</div>
+        
+        <label for="f_name">Your name:</label>
+        <input type="text" id="f_name" name="Имя" placeholder="">
+
+        <label for="f_email">Your email:</label>
+        <input type="text" id="f_email" name="E-mail" placeholder="">
+
+        <label for="f_email">Your address:</label>
+        <input type="text" id="f_email" name="address" placeholder="">
+
+        <label for="f_name">Message:</label>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+        <input type="submit" class="contact_button" value="Send this message">
+
+      </form>
+    </div>
+  </div>
+</div>
+    
+<!-- ...................................... 
+
+FOOTER
+
+...................................... -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-4 wow fadeInDown">
+                <p class="footer__name">Irina Zhuravleva</p>
+                <p>Front-end developer</p>
+            </div>
+            <div class="col-4">
+                <p class="footer__social">My profile:</p>
+                <p class="footer__social-icons">
+                   
+                    <a href="https://vk.com/id380570944" target="_blank">
+                    <i class="fa fa-vk" aria-hidden="true"></i>
+                    </a>
+                    
+                    <!-- <a href="#" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a> -->
+                    <a href="https://github.com/IrinaZhuravleva" target="_blank">
+                    <i class="fa fa-github-square" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/irina.zhuravleva.5249" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/zhuravleva4109" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    
+                    <!-- <a href="#" target="_blank">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                    </a> -->
+                    
+                </p>
+            </div>
+            <div class="col-4 wow fadeInDown">
+                <div><a href="contact-form.html" class="button">Send a message</a></div>
+                <p>Write to me for a request or prices</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+<script type="text/javascript" src="libs/wow.min.js"></script>
+<script src="js/main.js"></script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49928266 = new Ya.Metrika2({
+                    id:49928266,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/49928266" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    
+    <!-- VK Widget -->
+
+<!-- <div id="vk_community_messages"></div>
+<script type="text/javascript">
+VK.Widgets.CommunityMessages("vk_community_messages", 169930251, {expandTimeout: "15000",widgetPosition: "left",disableExpandChatSound: "1",disableNewMessagesSound: "1",tooltipButtonText: "Приветствуем Вас!"});
+</script> -->
+
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
