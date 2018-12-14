@@ -104,7 +104,7 @@ h1 {
 .card {
 	border: 0;
 	margin-top: 50px;
-
+  align-items: center;
 }
 
 .card img {
@@ -112,10 +112,17 @@ h1 {
 }
 
 .nav-pager {
-  transform: translateX(41.5%);
   margin-top: 40px;
+  
+}
+
+.pagination {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
   justify-content: center;
-  margin-bottom: 30px;
 }
 
 .pagination > li > a, .pagination > li >span {
@@ -265,6 +272,7 @@ h1 {
 ........................................ */
 
 .footer {
+  margin-top: 50px;
   padding-bottom: 10px;
   padding-top: 20px;
   background-color: #C59EAF;
@@ -272,11 +280,26 @@ h1 {
   color: #ffffff;
 }
 
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media (max-width: 1024px){
-  .footer {
+  .footer__social-icons {
+    margin-bottom: 15px;
+  }
+  .footer .container {
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
     text-align: center;
   }
 }
+
 
 .footer_2 {
   background-color:  #ffffff;
@@ -290,11 +313,6 @@ h1 {
   background-color: #fff;
 }
 
-.footer .row {
-  -ms-align-items: center;
-  align-items: center;
-}
-
 .footer p {
   margin-top: 0px;
   margin-bottom: 15px;
@@ -304,9 +322,8 @@ h1 {
   color: #FFF;
 }
 
-p.footer__name {
+.footer__name {
   font-size: 28px;
-  margin-bottom: 10px;
   line-height: normal;
   font-family: 'Merriweather', serif;
 }
@@ -318,7 +335,7 @@ p.footer__social {
 .footer__social-icons {
   color: #FFF;
   font-size: 32px;
-  margin-top: -17px; 
+  margin-top: -5px; 
 }
 
 .footer__social-icons a {
