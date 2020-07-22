@@ -88,13 +88,13 @@ header {
   .navbar .navbar-nav > li.active > a {
 		border-bottom: 0;
 		color: #fff;
-		background-color: #dff0d8;
+		/* background-color: #dff0d8; */
   }
  
   .navbar .navbar-nav:not(.icons) > li > a:hover {
 		border-bottom: 0;
 		color: #fff;
-		background-color: #dff0d8;
+		/* background-color: #dff0d8; */
   }
 
 	.navbar-nav,
@@ -104,8 +104,13 @@ header {
 }
 
 h1 {
+  text-transform: uppercase;
 	text-align: center;
 	font-size: 1.8rem;
+}
+
+.subtitle {
+  text-align: center;
 }
 
 .card {
@@ -146,14 +151,18 @@ h1 {
 	color: #b5b3b3;
 }
 
-@media only screen and (max-width : 990px) {
+@media only screen and (max-width : 991px) {
 	h1 {
 		font-size: 1.4rem;
 	}
 
 	.navbar-brand img {
 		width: 53px;
-	}
+  }
+  .navbar .navbar-nav>li {
+    width: 100%;
+    text-align: left;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -161,7 +170,11 @@ h1 {
 
 	h1 {
 		font-size: 1rem;
-	}
+  }
+  
+  header {
+    margin: 30px 0 20px;
+  }
 
 	.menu {
 		padding: 0;
@@ -172,16 +185,18 @@ h1 {
   	top: -48px;
   }
 
+
+
   .navbar .navbar-nav > li.active > a {
 		border-bottom: 0;
 		color: #fff;
-		background-color: #dff0d8;
+		/* background-color: #dff0d8; */
   }
  
   .navbar .navbar-nav:not(.icons) > li > a:hover {
 		border-bottom: 0;
 		color: #fff;
-		background-color: #dff0d8;
+		/* background-color: #dff0d8; */
   }
 
 
