@@ -208,7 +208,6 @@ h1 {
 
 }
 
-/*я добавила*/
 @media only screen and (max-width : 575px) {
 
 	.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
@@ -218,7 +217,11 @@ h1 {
   
 	.card {
 		text-align: center;
-	}
+  }
+  
+  .card img {
+    width: 100%;
+  }
 
 }
 
