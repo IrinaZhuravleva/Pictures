@@ -36,6 +36,7 @@ header {
 .navbar .navbar-nav>li {
   width: 20%;
   text-align: center;
+  border-bottom: 3px solid transparent;
 }
 
 .navbar .navbar-nav > li > a {
@@ -93,7 +94,7 @@ header {
  
   .navbar .navbar-nav:not(.icons) > li > a:hover {
 		border-bottom: 0;
-		color: #fff;
+		color: inherit;
 		/* background-color: #dff0d8; */
   }
 
