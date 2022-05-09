@@ -191,13 +191,12 @@ h1 {
 
   .navbar .navbar-nav > li.active > a {
 		border-bottom: 0;
-		color: #fff;
-		/* background-color: #dff0d8; */
+		color: rgb(67, 66, 66);
   }
  
   .navbar .navbar-nav:not(.icons) > li > a:hover {
 		border-bottom: 0;
-		color: #fff;
+		color: rgb(67, 66, 66);
 		/* background-color: #dff0d8; */
   }
 
