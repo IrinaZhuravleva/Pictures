@@ -1,27 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Oil Paintings</title>
+	<title>Картины по номерам</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+  <link rel="stylesheet" href="libs/animate.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
-  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.ico">
-  <!-- Android  -->
-  <link href="favicon-32x32.png" rel="icon" sizes="32x32">
+
+  <link rel="stylesheet" href="libs/animate.css">
   <script src="js/jquery-3.2.1.min.js"></script>
-  
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
-  <header> 
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light menu">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -30,26 +47,24 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-         <div class="blockmenu">
+        <div class="blockmenu">
           <div class="blockmenu-close"></div>
           <ul class="menu-hidden">
-            <li><a class="nav-link" href="index.html">Картины по номерам</a></li>
+            <li><a class="nav-link" href="index.html">Масло/акрил</li>
             <li><a class="nav-link" href="pencil.html">Карандаш</a></li>
             <li><a class="nav-link" href="sketch.html">Маркеры</a></li>
-            <li><a class="nav-link" href="oil.html">Масло/акрил</a></li>
+            <li><a class="nav-link" href="oil.html">Картины по номерам</a></li>
             <li><a class="nav-link" href="digital.html">Цифровой рисунок</a></li>
-            <!-- <li><a class="nav-link" href="ai.html">Adobe Illustrator</a></li> -->
           </ul>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item"><a class="nav-link" href="index.html">Картины по номерам</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Масло/акрил</a></li>
             <li class="nav-item"><a class="nav-link" href="pencil.html">Карандаш</a></li>
-            <li class="nav-item"><a class="nav-link" href="sketch.html">Маркеры</a></li>
-            <li class="nav-item active"><a class="nav-link" href="oil.html">Масло/акрил<span class="sr-only">(current)
-                  </span></a> </li>
+            <li class="nav-item"><a class="nav-link" href="sketch.html">Маркеры</a></li> 
+            <li class="nav-item active"><a class="nav-link" href="oil.html">Картины по номерам<span class="sr-only">(current)
+            </span></a></a></li>
             <li class="nav-item"><a class="nav-link" href="digital.html">Цифровой рисунок</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="ai.html">Adobe Illustrator</a></li> -->
           </ul>
         </div>
       </div>
@@ -58,136 +73,142 @@
 
   <div class="content">
     <div class="container">
-      <div class="slogan">
-        <h1>Мои работы маслом и акрилом</h1>
-      </div>
+      
+      <h1>На этом сайте представлены мои работы, выполненные различными иструментами</h1>
+      <p class="subtitle">На этой страницы выложены раскраски по номерам</p>
+
+      
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Натюрморт</h4>
-            <p>Холст, 30Х20, масло</p>
-            <a data-fancybox="gallery" href="img/photo/holland-2.jpg"><img src="img/photo/holland-2.jpg" height="173"
-                width="218"></a>
+            <h4>Морской бой</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/1.jpg"><img src="img/photo/1.jpg" height="173" width="218"></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Натюрморт</h4>
-            <p>Холст, 20Х20, масло</p>
-            <a data-fancybox="gallery" href="img/photo/holland-3.jpg"><img src="img/photo/holland-3.jpg" height="173"
-                width="218"></a>
+            <h4>Дом в Провансе</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/2.jpg"><img src="img/photo/2.jpg" height="173" width="218"></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Роза</h4>
-            <p>Холст, 35Х25, масло</p>
-            <a data-fancybox="gallery" href="img/photo/holland-4.jpg"><img src="img/photo/holland-4.jpg" height="173"
-                width="218"></a>
+            <h4>Счастье в кружке</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/3.jpg"><img src="img/photo/3.jpg" height="173" width="218"></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Копия</h4>
-            <p>Холст, 40Х30, масло</p>
-            <a data-fancybox="gallery" href="img/photo/holland-5.jpg"><img src="img/photo/holland-5.jpg" height="173"
-                width="218"></a>
+            <h4>Летний день</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/4.jpg"><img src="img/photo/4.jpg" height="173" width="218"></a>
+          </div>
+        </div>
+      </div class="row">
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <h4>Копируя великих</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/5.jpg"><img src="img/photo/5.jpg" height="173" width="218"></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Пейзаж</h4>
-            <p>Холст на картоне, 30Х40, акрил</p>
-            <a data-fancybox="gallery" href="img/photo/landscape.jpg"><img src="img/photo/landscape.jpg" height="173"
-                width="auto"></a>
+            <h4>Семья на берегу</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/6.jpg"><img src="img/photo/6.jpg" height="173" width="218"></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Лодка</h4>
-            <p>Холст на картоне, 30Х40, акрил</p>
-            <a data-fancybox="gallery" href="img/photo/boat.jpg"><img src="img/photo/boat.jpg" height="173"
-                width="auto"></a>
+            <h4>Санкт-Петербург</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/7.jpg"><img src="img/photo/7.jpg" height="173" width="218"></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Девушка</h4>
-            <p>Холст на картоне, 30Х40, масло</p>
-            <a data-fancybox="gallery" href="img/photo/girl.jpg"><img src="img/photo/girl.jpg" height="173"
-                width="218"></a>
+            <h4>Бухта в Италии</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/8.jpg"><img src="img/photo/8.jpg" height="173" width="218"></a>
+          </div>
+        </div>
+      </div class="row">
+
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="card">
+            <h4>Сказочный сон</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/9.jpg"><img src="img/photo/9.jpg" height="173" width="218"></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Портрет
-              
-            </h4>
-            <p>Холст на картоне, 30Х40, масло</p>
-            <a data-fancybox="gallery" href="img/photo/portrait.jpg"><img src="img/photo/portrait.jpg" height="173"
-                width="218"></a>
-          </div>
-        </div>
-        <!-- <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <h4>Человек-паук</h4>
-            <p>В работе.Холст на картоне, 30Х40, масло</p>
-            <a data-fancybox="gallery" href="img/photo/spider.jpg"><img src="img/photo/spider.jpg" height="173" width="218"></a>
-          </div>
-        </div> -->
-        <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <h4>Лавандовое поле</h4>
-            <p>Холст на картоне, 20Х15, масло</p>
-            <a data-fancybox="gallery" href="img/photo/field.jpg"><img src="img/photo/field.jpg" height="173" width="218"></a>
+            <h4>Девушки у моря</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/10.jpg"><img src="img/photo/10.jpg" height="173" width="218"></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Модерн</h4>
-            <p>Холст на картоне, 15Х20, масло</p>
-            <a data-fancybox="gallery" href="img/photo/23.jpg"><img src="img/photo/23.jpg" height="173" width="218"></a>
+            <h4>Встреча в кафе</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/11.jpg"><img src="img/photo/11.jpg" height="173" width="218"></a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6">
           <div class="card">
-            <h4>Натюрморт</h4>
-            <p>Холст на картоне, 20Х15, масло</p>
-            <a data-fancybox="gallery" href="img/photo/bottles.jpg"><img src="img/photo/bottles.jpg" height="173" width="218"></a>
+            <h4>Райская жизнь</h4>
+            <p>Размер 40х50, акрил</p>
+            <a data-fancybox="gallery" href="img/photo/12.jpg"><img src="img/photo/12.jpg" height="173" width="218"></a>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <h4>Абстракция</h4>
-            <p>Холст на картоне, 60Х50, акрил</p>
-            <a data-fancybox="gallery" href="img/photo/acryl-big.jpg"><img src="img/photo/acryl-big.jpg" height="173"
-                width="218"></a>
-          </div>
-        </div>
-        <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <h4>Натюрморт</h4>
-            <p>Холст на картоне, 30Х25, масло</p>
-            <a data-fancybox="gallery" href="img/photo/oil-bowl.jpg"><img src="img/photo/oil-bowl.jpg" height="173"
-                width="218"></a>
-          </div>
-        </div>
-        
-        <!-- <div class="col-md-3 col-sm-6">
-          <div class="card">
-            <h4>Натюрморт</h4>
-            <p>Холст, 30Х30, масло</p>
-            <a data-fancybox="gallery" href="img/photo/holland.jpeg"><img src="img/photo/holland.jpeg" height="173"
-                width="218"></a>
-          </div>
-        </div> -->
-      </div>
+      </div class="row">
+
+      <nav aria-label="Page navigation example">
+      <nav class="nav-pager">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="page2.html">2</a></li>
+          <li class="page-item">
+            <a class="page-link" href="page2.html" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
     </div>
   </div>
 
+  <!-- <footer>
+    <div class="container">
+      <p>Designed by WebWilla 2018</p>
+    </div>
+  </footer> -->
+
+  <!-- ...................................... 
+
+FOOTER
+
+...................................... -->
   <div class="footer">
     <div class="container">
       <div class="footer__name"><p>Ирина Журавлёва</p></div>
+          <!-- <p class="footer__social">Мои профили в социальных сетях:</p> -->
       <div class="footer__social-icons">
         <a href="https://vk.com/id380570944" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
         <a href="https://github.com/IrinaZhuravleva" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
@@ -195,6 +216,7 @@
         <a href="https://www.instagram.com/zhuravleva4109" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
       </div>
       <!-- <div class="footer__link"><a href="contact-form.html" class="button">Отправить сообщение</a></div> -->
+      <!-- <div class="footer__link"><a href="sparrow113@rambler.ru" class="button">Отправить сообщение</a></div> -->
     </div>        
   </div>
 
@@ -204,13 +226,14 @@
     </div>
   </div>
 
-	<script src="js/main.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <!-- /jQuery Modal -->
+
+
+  <script src="js/main.js"></script>
+	<script src="js/bootstrap.min.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
-
-
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
-
 </body>
 </html>
